@@ -48,7 +48,7 @@ jobs:
     needs: [Test, Load-Test]
     environment:
       name: production
-    if: github.event.inputs.environment == 'Production'
+    if: github.event.inputs.environment == 'production'
     steps:
       - run: |
           echo "🚀 Step 1..."
